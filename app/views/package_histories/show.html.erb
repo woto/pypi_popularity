@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Package:</b>
+  <%= @package_history.package %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @package_history.date %>
+</p>
+
+<p>
+  <b>Downloads:</b>
+  <%= @package_history.downloads %>
+</p>
+
+
+<%= link_to 'Edit', edit_package_history_path(@package_history) %> |
+<%= link_to 'Back', package_histories_path %>

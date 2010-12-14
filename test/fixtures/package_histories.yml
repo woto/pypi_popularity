@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  package: 
+  date: 2010-12-14
+  downloads: 1
+
+two:
+  package: 
+  date: 2010-12-14
+  downloads: 1
