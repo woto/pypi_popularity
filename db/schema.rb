@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101214160509) do
+ActiveRecord::Schema.define(:version => 20101214165417) do
 
   create_table "package_histories", :force => true do |t|
     t.integer  "package_id"
@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(:version => 20101214160509) do
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "description"
+    t.string   "link"
   end
 
 end

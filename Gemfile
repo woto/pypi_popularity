@@ -31,3 +31,4 @@ gem 'mysql2'
 # end
 #
 gem 'mechanize'
+gem 'ruby-debug'
