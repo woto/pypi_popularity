@@ -6,5 +6,5 @@ class Package < ActiveRecord::Base
 
   has_many :package_histories
 
-  scope :twenty_ten, joins(:package_histories).where('date > "2010-01-01"').where('downloads > 100').select("distinct(packages.id), packages.title, packages.description ")
+  scope :twenty_ten, joins(:package_histories).where('date > "2010-10-10"').where('downloads > 1000').select("distinct(packages.id), packages.title, packages.description ")
 end

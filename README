@@ -1,5 +1,8 @@
 Малюсенький проектик для просмотра популярных python модулей.
 
+bundle install
 rake db:create
 rake db:migrate
-rake db:data:load
+
+rake db:data:load или rake application:scrap
+
