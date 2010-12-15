@@ -1,17 +1,24 @@
 <h1>Listing packages</h1>
 
+<br/>
+
+<%= will_paginate @packages %>
+
+<br />
+
 <table>
   <tr>
-    <th>Title</th>
+    <th style="width: 700px">Title</th>
     <th></th>
     <th></th>
     <th></th>
   </tr>
 
+
 <% @packages.each do |package| %>
   <tr>
     <td><%= package.title %></td>
-    <td><%= link_to 'Show', package %></td>
+    <td><%= link_to 'Show', package_package_histories_path(package) %></td>
     <td><%= link_to 'Edit', edit_package_path(package) %></td>
     <td><%= link_to 'Destroy', package, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
@@ -20,4 +27,4 @@
 
 <br />
 
-<%= link_to 'New Package', new_package_path %>
+<%= will_paginate @packages %>

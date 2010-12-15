@@ -32,3 +32,4 @@ gem 'mysql2'
 #
 gem 'mechanize'
 gem 'ruby-debug'
+gem 'will_paginate', :git=>'git://github.com/mislav/will_paginate.git', :branch => 'rails3'

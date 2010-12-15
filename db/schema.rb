@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101214165417) do
+ActiveRecord::Schema.define(:version => 20101215091939) do
 
   create_table "package_histories", :force => true do |t|
     t.integer  "package_id"
@@ -18,6 +18,10 @@ ActiveRecord::Schema.define(:version => 20101214165417) do
     t.integer  "downloads"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "title"
+    t.string   "package_type"
+    t.string   "version"
+    t.string   "size"
   end
 
   create_table "packages", :force => true do |t|

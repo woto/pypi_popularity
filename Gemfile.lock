@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/mislav/will_paginate.git
+  revision: b1a5bee
+  branch: rails3
+  specs:
+    will_paginate (3.0.pre3)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -83,3 +90,4 @@ DEPENDENCIES
   mysql2
   rails (= 3.0.3)
   ruby-debug
+  will_paginate!

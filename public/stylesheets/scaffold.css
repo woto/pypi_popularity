@@ -54,3 +54,11 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+
+tr:nth-child(even) {
+  background: #DDD
+}
+
+tr:nth-child(odd) {
+  background: #DAD
+}

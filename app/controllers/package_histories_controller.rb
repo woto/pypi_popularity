@@ -2,7 +2,7 @@ class PackageHistoriesController < ApplicationController
   # GET /package_histories
   # GET /package_histories.xml
   def index
-    @package_histories = PackageHistory.all
+    @package_histories = PackageHistory.where(:package_id => params[:package_id])
 
     respond_to do |format|
       format.html # index.html.erb
