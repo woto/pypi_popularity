@@ -8,15 +8,15 @@
 
 <table>
   <tr>
-    <th style="width: 700px">Title</th>
-    <th></th>
+    <th style="width: 400px">Title</th>
+    <th>Description</th>
   </tr>
 
 
 <% @packages.each do |package| %>
   <tr>
-    <td><%= package.title %></td>
-    <td><%= link_to 'Show', package_package_histories_path(package) %></td>
+    <td><%= link_to package.title, package_package_histories_path(package) %></td>
+    <td><%= package.description %></td>
   </tr>
 <% end %>
 </table>

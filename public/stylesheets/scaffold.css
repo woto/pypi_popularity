@@ -62,3 +62,8 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
   background: #DAD
 }
+
+td {
+  padding: 4px;
+  
+}
