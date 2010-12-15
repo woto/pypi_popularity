@@ -10,8 +10,6 @@
   <tr>
     <th style="width: 700px">Title</th>
     <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
 
@@ -19,8 +17,6 @@
   <tr>
     <td><%= package.title %></td>
     <td><%= link_to 'Show', package_package_histories_path(package) %></td>
-    <td><%= link_to 'Edit', edit_package_path(package) %></td>
-    <td><%= link_to 'Destroy', package, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
